@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(134,153,167);
+    background: linear-gradient(0deg, rgba(134,153,167,0.26934523809523814) 0%, rgba(118,141,255,1) 100%);
+}
+
+.cloud{
+    width: 700px;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+    animation-name: cloud;
+    animation-timing-function:linear;
+}
+@keyframes cloud{
+    from{
+        left: -800px;
+
+    }
+    to{
+        left: 2000px;
+
+    }
+}
+.cloud2{
+    top: 400px;
+    animation-duration: 20s;
+}
+
+.cloud1{
+    top: 0px;
+    animation-duration: 15s;
+}
+
+.cloud3{
+    top: 200px;
+    animation-duration: 25s;
+}
+.cloud4{
+    top: 200px;
+    animation-duration: 35s;
+}
+.cloud5{
+    top: 600px;
+    animation-duration: 30s;
+}
+.cloud6{
+    top: -150px;
+    animation-duration:27s;
+}
+.plane{
+    position: absolute;
+    width: 300px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    animation-name: plane;
+    animation-timing-function:linear;
+    animation-duration: 30s;
+}
+@keyframes plane{
+    0%{
+        bottom: 0px;
+        left: 0;
+    }
+    25%{
+        bottom: 200px;
+        left: 200px;
+
+    }
+    60%{
+        bottom: 200px;
+        /* left: 400px; */
+    }
+    64%{
+        bottom: 150px;
+        /* left: 500px; */
+    }
+    100%{
+        left: 1000px;
+        bottom: -200px;
+    }
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    font-size: 60px;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
+    animation-name: header;
+    animation-timing-function:linear;
+    animation-duration: 30s;
+}
+@keyframes header{
+    0%{
+        z-index: -1;
+        opacity: 0;
+    }
+    95%{
+        z-index: -1;
+        opacity: 0;
+
+    }
+    100%{
+        z-index: 3;
+        opacity: 1;
+    }
+}
+.body{
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
+    animation-name: body;
+    animation-timing-function:linear;
+    animation-duration: 30s;
+}
+@keyframes body{
+    0%{
+        
+        opacity: 1;
+    }
+    95%{
+        
+        opacity: 1;
+
+    }
+    100%{
+        
+        opacity: 0;
+    }
+}
